@@ -1,0 +1,13 @@
+mixin top-line()
+	// start .top-line
+	+b.top-line.block-with-lazy
+		.container
+			+e.row.row
+				.col-auto
+					+e.A.logo-wrap(href='/')
+						img.res-i(src='img/@2x/header-logo.png' alt='')
+				+e.number-col.col-auto
+					+e.A.phone(href='tel:+79967903069') +7 996 790-30-69
+					+e.link-wrap
+						+e.A.callback.link-modal(href='#modal-call') обратный звонок
+	// end .top-line

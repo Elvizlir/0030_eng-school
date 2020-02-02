@@ -1,0 +1,34 @@
+mixin s-price()
+	// start s-price
+	+b.SECTION.s-price.section#s-price&attributes(attributes)
+		+e.bg-img(src='img/@2x/price-bg.png' alt='')
+		.container
+			+e.H2.title Сколько стоят занятия?
+			+e.wrap
+				+e.row.row
+					+e.col.col-md-4.col-sm-6
+						+e.item
+							+e.item-title Пробный урок
+							+e.item-text Приходите на Ваше первое занятие беплатною.  Мы уверены,  что Вам понравится
+							+e.item-price 0
+								span руб.
+							+e.btn.btn.btn-dark(href='#') Записаться на занятия
+					+e.col.col-md-4.col-sm-6
+						+e.item
+							+e.item-title Индивидуальное обучение
+							+e.item-text Программа занятий подбирается индивидуально 
+							+e.item-price.text-center . . .
+							+e.btn.btn.btn-dark(href='#') Записаться на занятия
+					+e.col.col-md-4.order-md-2
+						+e.item
+							+e.item-title Групповые занятия
+							+e.item-text 4 месяца интенсивного обучения. 3 урока в неделю, по 1,5 часа
+							+e.item-preprice От
+							+e.item-price 12000
+								span руб.
+							+e.btn.btn.btn-dark(href='#') Записаться на занятия
+				+e.info-wrap
+					+e.add-info
+						span Гостинный двор (месяц обучения 12000 руб)
+						span Крестовский остров (месяц обучения 16000 руб)
+	// end s-price

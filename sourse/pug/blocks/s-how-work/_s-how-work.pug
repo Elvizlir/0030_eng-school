@@ -1,0 +1,31 @@
+mixin s-how-work()
+	// start s-how-work
+	+b.SECTION.s-how-work.section#s-how-work&attributes(attributes)
+		+e.bg-img(src='img/@2x/s-how-work-bg.png' alt='')
+		+e.bg-img--circl(src='img/@2x/s-how-circles.png' alt='')
+		
+		.container
+			+e.H2.title Как проходят занятия?
+			+e.wrap
+				+e.row.row
+					+e.col.col-md-3.col-sm-6
+						+e.item
+							+e.item-title Теория
+							+e.item-text Изучаем новую лексику, грамматику и случаи, где можно использовать эти знания
+							+e.IMG.item-img(src='img/@2x/how-item-img1.png' alt='')
+					+e.col.col-md-3.col-sm-6
+						+e.item
+							+e.item-title Практика
+							+e.item-text Делаем упражнения, оттачиваем грамматику, произношение и чтение на разных примерах
+							+e.IMG.item-img(src='img/@2x/how-item-img2.png' alt='')
+					+e.col.col-md-3.col-sm-6
+						+e.item
+							+e.item-title Задание на дом
+							+e.item-text В конце каждого занятия даём задание на дом
+							+e.IMG.item-img(src='img/@2x/how-item-img3.png' alt='')
+					+e.col.col-md-3.col-sm-6
+						+e.item
+							+e.item-title Повторение
+							+e.item-text Начинаем занятие с повторения пройденного материала
+							+e.IMG.item-img(src='img/@2x/how-item-img4.png' alt='')
+	// end s-how-work

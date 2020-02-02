@@ -1,0 +1,41 @@
+mixin s-meeting()
+	// start s-meeting
+	+b.SECTION.s-meeting.section#s-meeting&attributes(attributes)
+		+e.bg-img(src='img/@2x/metteng-bg.png' alt='')
+		.container
+			+e.H2.title Давайте знакомиться?
+			+e.row.row
+				+e.col--left.col-lg-6
+					+e.item
+						img.res-i(src='img/@2x/meet-item-bg.png' alt='')
+						+e.item-content--left
+							+e.photo-wrap
+								+e.IMG.photo.res-i(src='img/@2x/meet-photo1.png')
+							+e.item-title Harsh
+							+e.item-text Мы представляем уникальную методику обучения с носителями языка. Быстро, качественно и эффективно
+					+e.item
+						img.res-i(src='img/@2x/meet-item-bg.png' alt='')
+						+e.item-content--left
+							+e.photo-wrap
+								+e.IMG.photo.res-i(src='img/@2x/meet-photo2.png')
+							+e.item-title Michie
+							+e.item-text Разработанная Нами четырехмесячная программа успеха направлена на то, чтобы, в первую очередь, избавить Вас от языкового барьера, ведь это самый важный и сложный шаг на пути к успеху
+					+e.IMG.col-img.res-i(src='img/@2x/col-img.png' alt='')
+				+e.col--right.col-lg-6
+					+e.item
+						img.res-i(src='img/@2x/meet-item-bg2.png' alt='')
+						+e.item-content--right
+							+e.photo-wrap
+								+e.IMG.photo.res-i(src='img/@2x/meet-photo3.png')
+							+e.item-title Anna
+							+e.item-text--right Наша идея состоит в том, чтобы не просто обучить студентов языку, мы хотим мотивировать Вас подходить к процессу творчески и не бояться выражать свои мысли
+					+e.item
+						img.res-i(src='img/@2x/meet-item-bg2.png' alt='')
+						+e.item-content--right
+							+e.photo-wrap
+								+e.IMG.photo.res-i(src='img/@2x/meet-photo4.png')
+							+e.item-title Tati
+							+e.item-text--right Мы поможем Вам подготовиться к экзаменам, а так же организуем разговорный клуб и дебаты
+			+e.btn.btn.btn-dark(href='#') Записаться на занятия
+
+	// end s-meeting

@@ -1,0 +1,28 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-how-work/_s-how-work.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-atmosphere/_s-atmosphere.pug
+include ../blocks/s-meeting/_s-meeting.pug
+include ../blocks/s-price/_s-price.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Изучай English В Санкт-Петербурге'
+	title= title
+block pagecontent 
+	//- +mob-mnu()
+	+header()
+		+top-line()
+		+header-block()
+	+s-how-work()
+	+s-advantages()
+	+s-atmosphere()
+	+s-meeting()
+	+s-price()
+	+s-contact()
+	+footer()

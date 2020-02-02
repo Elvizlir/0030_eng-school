@@ -1,0 +1,47 @@
+mixin s-contact()
+	// start s-contact
+	+b.s-contact.section.block-with-lazy#s-contact&attributes(attributes)
+		+e.bg-img(src='img/@2x/contact-bg.png' alt='')
+		.container
+			+e.H2.title Наши контакты
+
+			+e.row.row
+				+e.col.col-lg-6
+					+e.contact-block
+						+e.contact-title Адрес
+						+e.contact-text
+							span Гостинный двор (месяц обучения 12000 руб)
+							span Крестовский остров (месяц обучения 16000 руб)
+					+e.contact-block
+						+e.contact-title Телефон
+						+e.contact-text--phone
+							+e.phone-block
+								span
+									a(href='tel:+79967903060') +7 (996) 790-30-60
+								span WhatsApp: 
+									a(href='tel:+79944183069') +7 (994) 418-30-69
+							+e.phone-block
+								span
+									a(href='tel:+79219113998') +7 (921) 911-39-98
+								span
+									a(href='tel:+71621900741') +7 (162) 190-07-41
+					+e.contact-block
+						+e.contact-title Электронная почта
+						+e.contact-text
+							span
+								a(href='mailto:Bindassjha95@gmail.com') Bindassjha95@gmail.com
+							span
+								a(href='mailto:shorsher_anya@mail.ru') shorsher_anya@mail.ru
+				+e.col.col-lg-6
+					+e.form-block
+						+e.form-title Запишитесь на первое бесплатное занятие
+						+e.form-subtitle Вы познакомитесь с преподавателем и узнаете свой уровень английского
+						+form-wrap
+							+input('Ваше имя *', 'text', '', 'name')
+							+input('Ваш email *', 'text', '', 'mail')
+							+input('Ваш телефон *', 'tel', '', 'tel')
+							+e.btn.btn.btn-info(type="submit") Отправить
+					+e.polite Нажимая кнопку, вы соглашаетесь на обработку личных данных
+
+
+	// end s-contact

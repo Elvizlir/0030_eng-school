@@ -1,0 +1,28 @@
+mixin header-block()
+	// start header-block
+	+b.header-block#header-block
+		.container
+			+e.main-block
+				+e.IMG.main-img.res-i(src='img/@2x/header-main-img.png' alt='')
+				+e.content-block
+					+e.content-header
+						+e.header-row.row
+							.col-auto.d-flex
+								+e.logo-wrap
+									img.res-i(src='img/@2x/header-logo-mini.png' alt='')
+								+e.nav
+									+e.A.nav-link(href='#') О курсах
+									+e.A.nav-link(href='#') Преподаватели
+									+e.A.nav-link(href='#') Стоимости
+									+e.A.nav-link(href='#') Контакты
+							.col-auto
+								+e.A.phone(href='tel:+79967903069') +7 996 790-30-69
+					+e.content-body
+						+e.abs-img--left(src='img/@2x/header-abs-img-l.png' alt='')
+						+e.abs-img--right(src='img/@2x/header-abs-img-r.png' alt='')
+						+e.body-inner
+							h1 Изучай English
+								span В Санкт-Петербурге
+							+e.btn.btn.btn-dark(hre='#') Записаться на занятия
+					
+	// end header-block
