@@ -36,7 +36,7 @@
 							<div class="col-auto"><a class="top-line__logo-wrap" href="/"><img class="res-i" src="img/@2x/header-logo.png" alt=""/></a>
 							</div>
 							<div class="top-line__number-col col-auto"><a class="top-line__phone" href="tel:+79967903069">+7 996 790-30-69</a>
-								<div class="top-line__link-wrap"><a class="top-line__callback link-modal" href="#modal-call">обратный звонок</a>
+								<div class="top-line__link-wrap"><a class="top-line__callback link-modal" href="#modal-form">обратный звонок</a>
 								</div>
 							</div>
 						</div>
@@ -62,9 +62,7 @@
 								</div>
 								<div class="header-block__content-body"><img class="header-block__abs-img header-block__abs-img--left" src="img/@2x/header-abs-img-l.png" alt="" role="presentation"/><img class="header-block__abs-img header-block__abs-img--right" src="img/@2x/header-abs-img-r.png" alt="" role="presentation"/>
 									<div class="header-block__body-inner">
-										<h1>Изучай English<span>В Санкт-Петербурге</span></h1>
-										<div class="header-block__btn btn btn-dark" hre="#">Записаться на занятия
-										</div>
+										<h1>Изучай English<span>В Санкт-Петербурге</span></h1><a class="header-block__btn btn btn-dark link-modal" href="#modal-form">Записаться на занятия</a>
 									</div>
 								</div>
 							</div>
@@ -196,7 +194,7 @@
 								</div>
 							</div>
 						</div>
-					</div><a class="s-advantages__btn btn btn-dark" href="#">Записаться на занятия</a>
+					</div><a class="s-advantages__btn btn btn-dark link-modal" href="#modal-form">Записаться на занятия</a>
 				</div>
 			</section>
 			<!-- end s-advantages-->
@@ -274,7 +272,7 @@
 								</div>
 							</div>
 						</div>
-					</div><a class="s-meeting__btn btn btn-dark" href="#">Записаться на занятия</a>
+					</div><a class="s-meeting__btn btn btn-dark link-modal" href="#modal-form">Записаться на занятия</a>
 				</div>
 			</section>
 			<!-- end s-meeting-->
@@ -292,7 +290,7 @@
 									<div class="s-price__item-text">Приходите на Ваше первое занятие беплатною.  Мы уверены,  что Вам понравится
 									</div>
 									<div class="s-price__item-price">0<span>руб.</span>
-									</div><a class="s-price__btn btn btn-dark" href="#">Записаться на занятия</a>
+									</div><a class="s-price__btn btn btn-dark link-modal" href="#modal-form">Записаться на занятия</a>
 								</div>
 							</div>
 							<div class="s-price__col col-md-4 col-sm-6">
@@ -302,7 +300,7 @@
 									<div class="s-price__item-text">Программа занятий подбирается индивидуально 
 									</div>
 									<div class="s-price__item-price text-center">. . .
-									</div><a class="s-price__btn btn btn-dark" href="#">Записаться на занятия</a>
+									</div><a class="s-price__btn btn btn-dark link-modal" href="#modal-form">Записаться на занятия</a>
 								</div>
 							</div>
 							<div class="s-price__col col-md-4 order-md-2">
@@ -314,7 +312,7 @@
 									<div class="s-price__item-preprice">От
 									</div>
 									<div class="s-price__item-price">12000<span>руб.</span>
-									</div><a class="s-price__btn btn btn-dark" href="#">Записаться на занятия</a>
+									</div><a class="s-price__btn btn btn-dark link-modal" href="#modal-form">Записаться на занятия</a>
 								</div>
 							</div>
 						</div>
@@ -357,34 +355,36 @@
 							</div>
 						</div>
 						<div class="s-contact__col col-lg-6">
-							<div class="s-contact__form-block">
-								<div class="s-contact__form-title">Запишитесь на первое бесплатное занятие
+							<div class="form">
+								<div class="form__form-block">
+									<div class="form__form-title">Запишитесь на первое бесплатное занятие
+									</div>
+									<div class="form__form-subtitle">Вы познакомитесь с преподавателем и узнаете свой уровень английского
+									</div>
+									<div class="form-wrap">
+										<form>
+											<input type="hidden" name="example-input-field"/>
+											<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+											<input class="utm_source" type="hidden" name="utm_source"/>
+											<input class="utm_term" type="hidden" name="utm_term"/>
+											<input class="utm_medium" type="hidden" name="utm_medium"/>
+											<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше имя *" name="name"/>
+											</div>
+											<!-- +e.input-wrap-->
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваш email *" name="mail"/>
+											</div>
+											<!-- +e.input-wrap-->
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="Ваш телефон *" name="tel"/>
+											</div>
+											<!-- +e.input-wrap-->
+											<button class="form-wrap__btn btn btn-info" type="submit">Отправить
+											</button>
+										</form>
+									</div>
 								</div>
-								<div class="s-contact__form-subtitle">Вы познакомитесь с преподавателем и узнаете свой уровень английского
+								<div class="form__polite">Нажимая кнопку, вы соглашаетесь на обработку личных данных
 								</div>
-								<div class="form-wrap">
-									<form>
-										<input type="hidden" name="example-input-field"/>
-										<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
-										<input class="utm_source" type="hidden" name="utm_source"/>
-										<input class="utm_term" type="hidden" name="utm_term"/>
-										<input class="utm_medium" type="hidden" name="utm_medium"/>
-										<input class="utm_campaign" type="hidden" name="utm_campaign"/>
-										<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше имя *" name="name"/>
-										</div>
-										<!-- +e.input-wrap-->
-										<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваш email *" name="mail"/>
-										</div>
-										<!-- +e.input-wrap-->
-										<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="Ваш телефон *" name="tel"/>
-										</div>
-										<!-- +e.input-wrap-->
-										<button class="form-wrap__btn btn btn-info" type="submit">Отправить
-										</button>
-									</form>
-								</div>
-							</div>
-							<div class="s-contact__polite">Нажимая кнопку, вы соглашаетесь на обработку личных данных
 							</div>
 						</div>
 					</div>
@@ -409,30 +409,34 @@
 			</footer>
 		</div>
 		<div class="d-none">
-			<div class="form-wrap modal-win modal-form" id="modal-call">
-				<form>
-					<input type="hidden" name="example-input-field"/>
-					<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
-					<input class="utm_source" type="hidden" name="utm_source"/>
-					<input class="utm_term" type="hidden" name="utm_term"/>
-					<input class="utm_medium" type="hidden" name="utm_medium"/>
-					<input class="utm_campaign" type="hidden" name="utm_campaign"/>
-					<div class="text-center">
-						<div class="form-wrap__title h3 ttu">Обратный звонок
-						</div>
-						<p>Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут</p>
+			<div class="form modal-win modal-form" id="modal-form">
+				<div class="form__form-block">
+					<div class="form__form-title">Оставьте заявку
 					</div>
-					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше Имя" name="text" required="required"/> 
+					<div class="form-wrap">
+						<form>
+							<input type="hidden" name="example-input-field"/>
+							<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+							<input class="utm_source" type="hidden" name="utm_source"/>
+							<input class="utm_term" type="hidden" name="utm_term"/>
+							<input class="utm_medium" type="hidden" name="utm_medium"/>
+							<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+							<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше имя *" name="name"/>
+							</div>
+							<!-- +e.input-wrap-->
+							<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваш email *" name="mail"/>
+							</div>
+							<!-- +e.input-wrap-->
+							<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="Ваш телефон *" name="tel"/>
+							</div>
+							<!-- +e.input-wrap-->
+							<button class="form-wrap__btn btn btn-info" type="submit">Отправить
+							</button>
+						</form>
 					</div>
-					<!-- +e.input-wrap-->
-					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="Ваш телефон" name="tel" required="required"/>
-					</div>
-					<!-- +e.input-wrap--><input class="form-wrap__btn" type="submit" value="Рассчитать"/>
-					<div class="form-wrap__polite">
-						<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-						</label>
-					</div>
-				</form>
+				</div>
+				<div class="form__polite">Нажимая кнопку, вы соглашаетесь на обработку личных данных
+				</div>
 			</div>
 			<!-- #modal-call-->
 		</div>

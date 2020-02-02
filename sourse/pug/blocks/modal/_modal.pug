@@ -32,15 +32,16 @@ mixin modal()
 	//- 			.h3 Скоро с Вами свяжутся
 	//- 			br 
 	.d-none
-		+form-wrap()(id="modal-call" class="  modal-win modal-form" )
-			.text-center
-				+e.title.h3.ttu Обратный звонок
-				p Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут
-			+input("Ваше Имя")(required) 
-			+input("Ваш телефон","tel")(required)
-			//- +input("email","Ваше email")(required)
-			//- +text( "Комментарий")
-			+e.INPUT.btn(type="submit" value="Рассчитать") 
-			+polite()
+		//- +form-wrap()(id="modal-call" class="  modal-win modal-form" )
+		
+		+b.form.modal-win.modal-form#modal-form
+			+e.form-block
+				+e.form-title Оставьте заявку
+				+form-wrap
+					+input('Ваше имя *', 'text', '', 'name')
+					+input('Ваш email *', 'text', '', 'mail')
+					+input('Ваш телефон *', 'tel', '', 'tel')
+					+e.btn.btn.btn-info(type="submit") Отправить
+			+e.polite Нажимая кнопку, вы соглашаетесь на обработку личных данных
 		// #modal-call
 	// modal

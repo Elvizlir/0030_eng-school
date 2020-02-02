@@ -116,6 +116,8 @@
 	}
 
 	&__btn{
+		position: relative;
+		z-index: 10;
 		display: block;
 		width: rem(200);
 		font-size: rem(12);

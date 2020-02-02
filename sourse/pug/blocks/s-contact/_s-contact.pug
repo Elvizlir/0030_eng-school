@@ -33,15 +33,16 @@ mixin s-contact()
 							span
 								a(href='mailto:shorsher_anya@mail.ru') shorsher_anya@mail.ru
 				+e.col.col-lg-6
-					+e.form-block
-						+e.form-title Запишитесь на первое бесплатное занятие
-						+e.form-subtitle Вы познакомитесь с преподавателем и узнаете свой уровень английского
-						+form-wrap
-							+input('Ваше имя *', 'text', '', 'name')
-							+input('Ваш email *', 'text', '', 'mail')
-							+input('Ваш телефон *', 'tel', '', 'tel')
-							+e.btn.btn.btn-info(type="submit") Отправить
-					+e.polite Нажимая кнопку, вы соглашаетесь на обработку личных данных
+					+b.form
+						+e.form-block
+							+e.form-title Запишитесь на первое бесплатное занятие
+							+e.form-subtitle Вы познакомитесь с преподавателем и узнаете свой уровень английского
+							+form-wrap
+								+input('Ваше имя *', 'text', '', 'name')
+								+input('Ваш email *', 'text', '', 'mail')
+								+input('Ваш телефон *', 'tel', '', 'tel')
+								+e.btn.btn.btn-info(type="submit") Отправить
+						+e.polite Нажимая кнопку, вы соглашаетесь на обработку личных данных
 
 
 	// end s-contact
